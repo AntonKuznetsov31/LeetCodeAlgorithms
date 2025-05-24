@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let input1 = "nagaram"
-    let input2 = "anagram1"
+    let input1 = ["flower","flow","flight"]
+//    let input2 = "anagram1"
     
-    let solution = Solution242()
+    let solution = Solution14()
     
     var body: some View {
         VStack {
-            Text("\(solution.isAnagram(input1,input2))")
+            Text("Result: \(solution.longestCommonPrefix(input1))")
                 .font(.system(size: 45))
                 .fontWeight(.bold)
         }
